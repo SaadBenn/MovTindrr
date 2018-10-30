@@ -8,8 +8,8 @@ import Colors from "./constants/Colors";
 EStyleSheet.build(Colors);
 
 const fonts = {
-    'montserrat-regular': require("./assets/fonts/Montserrat-Regular.ttf"),
-    'montserrat-bold': require("./assets/fonts/Montserrat-Bold.tff"),
+    'montserrat-regular': require('./assets/fonts/Montserrat-Regular.ttf'),
+    'montserrat-bold': require('./assets/fonts/Montserrat-Bold.tff'),
 };
 
 class App extends React.Component {
