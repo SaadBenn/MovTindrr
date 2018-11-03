@@ -3,7 +3,7 @@ import {View, ActivityIndicator, Text} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from '../../constants/Colors';
 
-class LoadingScreen extends Component {
+class loadingscreen extends Component {
     state = {
         dots: []
     }
@@ -56,4 +56,4 @@ class LoadingScreen extends Component {
        loader: {height :75}
     });
 
-    export default LoadingScreen;
+    export default loadingscreen;
