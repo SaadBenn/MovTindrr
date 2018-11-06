@@ -33,4 +33,32 @@ class Panel extends Component {
         ).start();
     }
 
+    render() {
+        console.log(this.state);
+
+        let icon = this._icons.down;
+        if (this.state.expanded) {
+            icon = this._icons.up;
+        }
+
+        return (
+            <TouchableWithoutFeedback onPress={this._toggle}>
+                <Animated.View style={[styles.container, {flex: this.state.flexAnim}]}>
+                    <View style={styles.button}>
+                        <Ionicons name={icon} color='#fff' size={30} />
+                    </View>
+                    <View style={styles.titleContainer}>
+                        <Text style={styles.titleStyle}>{this.props.title}</Text>
+                    </View>
+                    {this.state.expanded && (
+                        <View style={styles.panelBody}>
+                            {this.props.children}
+                        </View>
+                    )}
+                </Animated.View>
+            </TouchableWithoutFeedback>
+        );
+    }
 }
+
+export default Panel;
