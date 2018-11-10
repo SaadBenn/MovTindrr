@@ -5,7 +5,7 @@ import {LoadingScreen} from '../../commons';
 import {MoviesSimilarList} from './components';
 
 
-class MoviesSimialrScreen extends Component {
+class MoviesSimilarScreen extends Component {
     state = {
         loading: false
     }
@@ -41,4 +41,4 @@ export default connect (
     movieSimialr: state.moviesSimilar
 }),
     {getMoviesSimilar, getMoviesSimilarFirst}
-)(MoviesSimialrScreen);
+)(MoviesSimilarScreen);
